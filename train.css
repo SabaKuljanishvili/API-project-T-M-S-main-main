@@ -58,7 +58,7 @@ body {
 }
 .container {
     background-color: rebeccapurple;
-    width: 800px;
+    width: 1050px;
     height: 600px;
     margin: 80px auto;
 
@@ -135,6 +135,7 @@ border: 1px solid rgba( 255, 255, 255, 0.18 );
     font-family: 'Times New Roman', Times, serif;
 }
 .gilaki {
+    position: absolute;
     padding: 12px;
     width: 200px;
     margin-top: 9rem;
@@ -161,7 +162,6 @@ border: 1px solid rgba( 255, 255, 255, 0.18 );
     margin-left: 40px;
     transition-duration: 1000ms;
 }
-
 .asarchevi {
     margin:20px;
 }
@@ -170,13 +170,21 @@ border: 1px solid rgba( 255, 255, 255, 0.18 );
     border: none;
     outline: none;
     max-width: 190px;
+    margin: 10px 0;
     padding: 10px 20px;
     font-size: 16px;
     border-radius: 9999px;
     box-shadow: inset 2px 5px 10px rgb(5, 5, 5);
     color: #ffbb00;
 }
-
+h2 {
+    margin: 10px 10px;
+    font-size: 20px;
+    color: rgb(4, 4, 166);
+}
+label {
+    margin: 10px 10px;
+}
 
 .cont {
     display: grid;
@@ -217,4 +225,42 @@ border: 1px solid rgba( 255, 255, 255, 0.18 );
 
 .bntOne:hover {
     background: #E07B00;
+}
+#seat-container {
+    margin: -220px 400px;
+    width: 600px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr ;
+}
+#selected-seats-info {
+    width: 300px;
+    margin:25px 100px;
+    font-size: 20px;
+    font-family: 'Times New Roman', Times, serif;
+    color: rgb(0, 0, 0);
+}
+#selected-seats {
+    width: 300px;
+    margin: 10px 400px;
+    font-size: 20px;
+    font-family: 'Times New Roman', Times, serif;
+    color: rgb(0, 0, 0);
+}
+.seat-button {
+    padding: 10px;
+    margin: 5px;
+    border: 1px solid #ccc;
+    background-color: #f4f4f4;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.seat-button:hover {
+    background-color: #ddd;
+}
+
+.seat-button.selected {
+    background-color: #4CAF50;
+    color: white;
+    border: 1px solid #2E7D32;
 }
