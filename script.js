@@ -91,5 +91,26 @@ document.addEventListener("DOMContentLoaded", () => {
 });
 
 
+document.addEventListener("DOMContentLoaded", function() {
+    let token = localStorage.getItem("token");
+    const authLink = document.getElementById("authLink");
 
+    if (token) {
+        authLink.textContent = "Log Out";
+        authLink.classList.add("btnLogout");
+        authLink.href = "#";
+        authLink.addEventListener("click", function(event) {
+            event.preventDefault();
+            logout();
+        });
+    } else {
+        authLink.textContent = "Login";
+        authLink.classList.remove("btnLogout");
+        authLink.href = "login.html";
+    }
 
+    function logout() {
+        localStorage.removeItem("token");
+        window.location.href = "index.html";
+    }
+});
