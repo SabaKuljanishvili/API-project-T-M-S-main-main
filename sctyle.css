@@ -272,29 +272,6 @@ a {
   color: #ffbb00;
   transition: color 0.3s ease;
 }
-/* @media (max-width: 1418px) {
-    .train-left {
-      position: absolute;
-      top: 180px;
-      left: -50px;
-    }
-    .train-left img {
-      width: 500px;
-      height: auto;
-      filter: drop-shadow(30px 40px 20px black);
-    }
-}
-@media (max-width: 948px) {
-    .cont {
-        grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
-    }
-    .train-left {
-      display: none !important;
-    }
-} */
-
-
-/* --- ზოგადი სტილის ცვლილებები პატარა ეკრანებისთვის --- */
 @media only screen and (max-width: 480px) {
   main {
     padding: 20px 10px;
