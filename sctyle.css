@@ -315,21 +315,37 @@ main {
 .chos {
   padding: 12px;
 }
-
-
-@media (max-width: 1218px) {
+.login {
+  position: absolute;
+  margin: -170px 20px;
+  background: rgb(84, 83, 83);
+  border: none;
+  outline: none;
+  max-width: 70px;
+  padding: 10px 20px;
+  font-size: 16px;
+  border-radius: 9999px;
+  box-shadow: inset 2px 5px 10px rgb(5, 5, 5);
+  color: #ffbb00;
+}
+a {
+  text-decoration: none;
+  color: #ffbb00;
+  transition: color 0.3s ease;
+}
+@media (max-width: 1418px) {
     .train-left {
       position: absolute;
       top: 180px;
       left: -50px;
     }
     .train-left img {
-      width: 400px;
+      width: 500px;
       height: auto;
       filter: drop-shadow(30px 40px 20px black);
     }
 }
-@media (max-width: 768px) {
+@media (max-width: 948px) {
     .cont {
         grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
     }
