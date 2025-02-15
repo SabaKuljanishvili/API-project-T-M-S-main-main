@@ -1,7 +1,4 @@
-/* http://meyerweb.com/eric/tools/css/reset/
-v2.0 | 20110126
-License: none (public domain)
-*/
+/* CSS Reset */
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -22,118 +19,47 @@ time, mark, audio, video {
     font: inherit;
     vertical-align: baseline;
 }
-/* HTML5 display-role reset for older browsers */
+
 article, aside, details, figcaption, figure, 
 footer, header, hgroup, menu, nav, section {
     display: block;
 }
+
 body {
     line-height: 1;
-}
-ol, ul {
-    list-style: none;
-}
-blockquote, q {
-    quotes: none;
-}
-blockquote:before, blockquote:after,
-q:before, q:after {
-    content: '';
-    content: none;
-}
-table {
-    border-collapse: collapse;
-    border-spacing: 0;
+    background: url(img/შტადლერი.jpg) no-repeat center center fixed;
+    background-size: cover;
+    scroll-behavior: smooth;
 }
 
-
-
-body {
-    background: url(img/შტადლერი.jpg);
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
-  background-attachment: fixed;
-  scroll-behavior: smooth;
-}
 .container {
-    background-color: rebeccapurple;
-    width: 1050px;
-    height: 600px;
+    background: rgba(255, 255, 255, 0.4);
+    box-shadow: 0 8px 32px rgba(31, 38, 135, 0.37);
+    backdrop-filter: blur(15px);
+    border-radius: 10px;
+    border: 1px solid rgba(255, 255, 255, 0.18);
     margin: 80px auto;
+    padding: 20px;
+    max-width: 1050px;
+}
 
-
-    background: rgba( 255, 255, 255, 0.1 );
-box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
-backdrop-filter: blur( 12px );
--webkit-backdrop-filter: blur( 12px );
-border-radius: 10px;
-border: 1px solid rgba( 255, 255, 255, 0.18 );
+h1, h2 {
+    color: #184e77;
+    font-weight: 600;
 }
 
 #train-name {
     text-align: center;
-    color: white;
     font-size: 40px;
-    font-family: 'Times New Roman', Times, serif;
     margin-bottom: 20px;
-    padding: 12px;
 }
-#train-from {
-    text-align: left;
-    margin-left: 10px;
-    color: black;
-    margin-top: 10px;
+
+#train-from, #train-to, #train-departure, #train-arrival, #train-date {
+    color: #0b2d47;
     font-size: 25px;
-    font-family: 'Times New Roman', Times, serif;
+    margin: 10px 0;
 }
-#train-from span {
-    margin-left: 150px;
-}
-#seat-select {
-    background: none;
-    border: none;
-    outline: none;
-    max-width: 190px;
-    margin-top: 20px;
-    padding: 10px 20px;
-    font-size: 16px;
-    border-radius: 9999px;
-    box-shadow: inset 2px 5px 10px rgb(5, 5, 5);
-    color: #000000;
-}
-#train-to {
-    text-align: left;
-    margin-left: 10px;
-    color: rgb(0, 0, 0);
-    margin-top: 10px;
-    font-size: 25px;
-    font-family: 'Times New Roman', Times, serif;
-}
-#train-departure {
-    text-align: left;
-    margin-left: 10px;
-    color: black;
-    margin-top: 20px;
-    font-size: 25px;
-    font-family: 'Times New Roman', Times, serif;
-}
-#train-arrival {
-    text-align: left;
-    margin-left: 10px;
-    color: black;
-    margin-top: 10px;
-    font-size: 25px;
-    font-family: 'Times New Roman', Times, serif;
-}
-#train-date {
-    text-align: left;
-    margin-left: 10px;
-    color: black;
-    margin-top: 10px;
-    font-size: 25px;
-    font-family: 'Times New Roman', Times, serif;
-}
+
 .gilaki {
     position: absolute;
     padding: 12px;
@@ -141,111 +67,24 @@ border: 1px solid rgba( 255, 255, 255, 0.18 );
     margin-top: 9rem;
     border-radius: 29px;
     background: linear-gradient(145deg, #212121, #1c1c1c);
-    box-shadow:  30px 30px 59px #101010,
-             -30px -30px 59px #2e2e2e;
-    margin-left: 20px;
+    box-shadow: 30px 30px 59px #101010, -30px -30px 59px #2e2e2e;
 }
-.gilaki .bttn {
-    color: rgb(255, 255, 255);
-    text-decoration: none;
-    font-size: 20px;
-    font-family: "Bona Nova SC", serif;
-    font-weight: 700;
-    font-style: normal;
-}
+
 .gilaki:hover {
-    border-radius: 29px;
     background: linear-gradient(145deg, #945600, #7c4800);
-    box-shadow:  30px 30px 59px #482a00,
-                 -30px -30px 59px #cc7600;
-    color: #212121;
-    margin-left: 40px;
     transition-duration: 1000ms;
 }
-.asarchevi {
-    margin:20px;
-}
-#vagon-select  {
-    background: none;
+
+#seat-select, #vagon-select {
+    background: #184e77;
     border: none;
-    outline: none;
-    max-width: 190px;
-    margin: 10px 0;
-    padding: 10px 20px;
-    font-size: 16px;
     border-radius: 9999px;
-    box-shadow: inset 2px 5px 10px rgb(5, 5, 5);
-    color: #ffbb00;
-}
-h2 {
-    margin: 10px 10px;
-    font-size: 20px;
-    color: rgb(4, 4, 166);
-}
-label {
-    margin: 10px 10px;
+    padding: 10px 20px;
+    color: #ffffff;
+    font-size: 16px;
+    margin: 10px 0;
 }
 
-.cont {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-    gap: 20px;
-    justify-content: center;
-    padding: 20px;
-    margin-top: 100px;
-}
-
-.mat {
-    background: linear-gradient(135deg, #4169E1, #1E90FF);
-    color: white;
-    font-family: 'Poppins', sans-serif;
-    padding: 15px;
-    border-radius: 12px;
-    box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.2);
-    text-align: center;
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-}
-
-.mat:hover {
-    transform: translateY(-5px);
-    box-shadow: 6px 6px 15px rgba(0, 0, 0, 0.3);
-}
-
-.bntOne {
-    display: inline-block;
-    margin-top: 10px;
-    padding: 8px 12px;
-    background: #FF8C00;
-    color: white;
-    text-decoration: none;
-    border-radius: 6px;
-    font-weight: 600;
-    transition: background 0.3s ease;
-}
-
-.bntOne:hover {
-    background: #E07B00;
-}
-#seat-container {
-    margin: -220px 400px;
-    width: 600px;
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr ;
-}
-#selected-seats-info {
-    width: 300px;
-    margin:25px 100px;
-    font-size: 20px;
-    font-family: 'Times New Roman', Times, serif;
-    color: rgb(255, 255, 255);
-}
-#selected-seats {
-    width: 300px;
-    margin: 10px 400px;
-    font-size: 20px;
-    font-family: 'Times New Roman', Times, serif;
-    color: rgb(0, 0, 0);
-}
 .seat-button {
     padding: 10px;
     margin: 5px;
@@ -260,143 +99,67 @@ label {
 }
 
 .seat-button.selected {
-    background-color: #4CAF50;
+    background-color: #184e77;
     color: white;
-    border: 1px solid #2E7D32;
+}
+label {
+  color: #184e77;
+  font-weight: 600;
+  font-size: 20px;
 }
 #buy-btn {
-    margin: 20px 0;
+  margin-top: 20px;
     padding: 10px 20px;
-    background-color: #4CAF50;
+    background-color: #184e77;
     color: white;
     border: none;
-    cursor: pointer;
     border-radius: 5px;
     font-size: 15px;
 }
+
 #buy-btn:hover {
     background-color: #2b6e2f;
 }
+#selected-seats-info {
+  font-size: 18px;
+  margin-top: 20px;
+  margin-left: 10px;
+  font-size: 20px;
+  font-family: 'Times New Roman', Times, serif;
+  color: rgb(255, 255, 255);
+}
 
-@media only screen and (max-width: 480px) {
-    .container {
-      width: 95%;
-      height: auto;
-      margin: 20px auto;
-      padding: 20px;
-    }
-    #train-name {
-      font-size: 30px;
-    }
-    #train-from,
-    #train-to,
-    #train-departure,
-    #train-arrival,
-    #train-date {
-      font-size: 18px;
-    }
-    #seat-container {
-      margin: 20px auto;
-      width: 90%;
-      grid-template-columns: repeat(3, 1fr);
-    }
-    #selected-seats-info,
-    #selected-seats {
-      width: 90%;
-      margin: 10px auto;
-      font-size: 16px;
-    }
-  }
-  
-  @media only screen and (min-width: 481px) and (max-width: 768px) {
-    .container {
-      width: 90%;
-      height: auto;
-      margin: 40px auto;
-      padding: 20px;
-    }
-    #train-name {
-      font-size: 35px;
-    }
-    #train-from,
-    #train-to,
-    #train-departure,
-    #train-arrival,
-    #train-date {
-      font-size: 20px;
-    }
-    #seat-container {
-      margin: 20px auto;
-      width: 90%;
-      grid-template-columns: repeat(4, 1fr);
-    }
-    #selected-seats-info,
-    #selected-seats {
-      width: 90%;
-      margin: 10px auto;
-      font-size: 18px;
-    }
-  }
-  
-  @media only screen and (min-width: 769px) and (max-width: 1024px) {
-    .container {
-      width: 95%;
-      height: auto;
-      margin: 60px auto;
-    }
-    #train-name {
-      font-size: 38px;
-    }
-    #train-from,
-    #train-to,
-    #train-departure,
-    #train-arrival,
-    #train-date {
-      font-size: 22px;
-    }
-    #seat-container {
-      margin: 20px auto;
-      width: 90%;
-      grid-template-columns: repeat(5, 1fr);
-    }
-    #selected-seats-info,
-    #selected-seats {
-      width: 90%;
-      margin: 10px auto;
-      font-size: 20px;
-    }
-  }
-  
-  @media only screen and (min-width: 1025px) {
-    .container {
-      width: 1050px;
-      height: 600px;
-      margin: 80px auto;
-    }
-    #train-name {
-      font-size: 40px;
-    }
-    #train-from,
-    #train-to,
-    #train-departure,
-    #train-arrival,
-    #train-date {
-      font-size: 25px;
-    }
-    #seat-container {
-      margin: -220px 400px;
-      width: 600px;
-      grid-template-columns: repeat(6, 1fr);
-    }
-    #selected-seats-info {
-      width: 300px;
-      margin: 25px 100px;
-      font-size: 20px;
-    }
-    #selected-seats {
-      width: 300px;
-      margin: 10px 400px;
-      font-size: 20px;
-    }
-  }
-  
+#seat-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 20px;
+}
+.gilaki {
+  position: absolute;
+  padding: 12px;
+  width: 200px;
+  margin-top: 2rem;
+  border-radius: 29px;
+  background: linear-gradient(145deg, #212121, #1c1c1c);
+  box-shadow:  30px 30px 59px #101010,
+           -30px -30px 59px #2e2e2e;
+  margin-left: 20px;
+}
+.gilaki .bttn {
+  color: rgb(255, 255, 255);
+  text-decoration: none;
+  font-size: 20px;
+  font-family: "Bona Nova SC", serif;
+  font-weight: 700;
+  font-style: normal;
+}
+.gilaki:hover {
+  border-radius: 29px;
+  background: linear-gradient(145deg, #945600, #7c4800);
+  box-shadow:  30px 30px 59px #482a00,
+               -30px -30px 59px #cc7600;
+  color: #212121;
+  margin-left: 40px;
+  transition-duration: 1000ms;
+}

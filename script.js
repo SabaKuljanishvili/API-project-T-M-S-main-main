@@ -31,7 +31,7 @@ document.addEventListener("DOMContentLoaded", () => {
                 <p class="departure">გასვლა: ${item.departure}</p>
                 <p class="arrive">ჩასვლა: ${item.arrive}</p>
                 <p class="date">📅 ${item.date}</p>
-                <a href="train.html?id=${item.id}" class="bntOne">გაიგე- მეტი </a>
+                <a href="train.html?id=${item.id}" class="bntOne">ყიდვა </a>
             </div>`;
         });
 

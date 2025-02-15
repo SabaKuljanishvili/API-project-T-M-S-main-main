@@ -23,7 +23,7 @@ document.addEventListener("DOMContentLoaded", () => {
           document.getElementById("train-to").textContent = `მდე: ${train.to}`;
           document.getElementById("train-departure").textContent = `გასვლა: ${train.departure}`;
           document.getElementById("train-arrival").textContent = `ჩასვლა: ${train.arrive}`;
-          document.getElementById("train-date").textContent = `📅 ${train.date}`;
+          document.getElementById("train-date").textContent = `${train.date}`;
 
           fetch(`https://railway.stepprojects.ge/api/vagons?trainId=${trainId}`)
               .then(resp => resp.json())
@@ -57,7 +57,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
   function displaySeatInfo(vagon) {
       let infoDiv = document.getElementById("vagon-info");
-      infoDiv.innerHTML = `<h2>${vagon.name} - სექციები</h2>`;
+      infoDiv.innerHTML = `<h2>${vagon.name} </h2>`;
 
       let seatContainer = document.createElement("div");
       seatContainer.id = "seat-container";
@@ -102,11 +102,11 @@ document.addEventListener("DOMContentLoaded", () => {
   function updateSelectedInfo() {
       let selectedInfo = document.getElementById("selected-seats-info");
       if (selectedSeatsGlobal.length === 0) {
-          selectedInfo.innerHTML = `<h3>🪑 არჩეული სკამ(ებ)ი:</h3><p>სკამი არ არის არჩეული.</p>`;
+          selectedInfo.innerHTML = `<h3> არჩეული სკამ(ებ)ი:</h3><p>სკამი არ არის არჩეული.</p>`;
           return;
       }
 
-      let html = `<h3>🪑 არჩეული სკამ(ებ)ი:</h3>`;
+      let html = `<h3>არჩეული სკამ(ებ)ი:</h3>`;
       selectedSeatsGlobal.forEach(item => {
           html += `<p>ვაგონი: ${item.vagonName}, სკამი: ${item.seatNumber}</p>`;
       });
