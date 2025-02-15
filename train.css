@@ -60,20 +60,6 @@ h1, h2 {
     margin: 10px 0;
 }
 
-.gilaki {
-    position: absolute;
-    padding: 12px;
-    width: 200px;
-    margin-top: 9rem;
-    border-radius: 29px;
-    background: linear-gradient(145deg, #212121, #1c1c1c);
-    box-shadow: 30px 30px 59px #101010, -30px -30px 59px #2e2e2e;
-}
-
-.gilaki:hover {
-    background: linear-gradient(145deg, #945600, #7c4800);
-    transition-duration: 1000ms;
-}
 
 #seat-select, #vagon-select {
     background: #184e77;
@@ -156,9 +142,9 @@ label {
 }
 .gilaki:hover {
   border-radius: 29px;
-  background: linear-gradient(145deg, #945600, #7c4800);
-  box-shadow:  30px 30px 59px #482a00,
-               -30px -30px 59px #cc7600;
+  background: linear-gradient(145deg, #184e77, #092337);
+  box-shadow:  30px 30px 59px #082236,
+               -30px -30px 59px #0d2131;
   color: #212121;
   margin-left: 40px;
   transition-duration: 1000ms;
