@@ -43,6 +43,7 @@ body {
     max-width: 1050px;
 }
 
+  
 h1, h2 {
     color: #184e77;
     font-weight: 600;
@@ -58,9 +59,8 @@ h1, h2 {
     color: #0b2d47;
     font-size: 25px;
     margin: 10px 0;
+    width: fit-content;
 }
-
-
 #seat-select, #vagon-select {
     background: #184e77;
     border: none;
@@ -72,6 +72,7 @@ h1, h2 {
 }
 
 .seat-button {
+    min-width: 110px ;
     padding: 10px;
     margin: 5px;
     border: 1px solid #ccc;
