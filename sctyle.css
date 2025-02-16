@@ -63,7 +63,7 @@ main {
 }
 
 .dasawyisi {  
-  font-family: Arial, sans-serif;
+  font-family: qartuli;
   color: #bc4749;
   margin: 250px 100px;
   text-align: center;
@@ -74,7 +74,7 @@ main {
   justify-items: center; 
 }
 .dasawyisi h1 {
-  font-family: "Bona Nova SC", serif;
+  font-family: "Bona Nova SC", ;
   font-weight: 400;
   font-style: italic;
   font-size: 80px;
@@ -218,6 +218,9 @@ main {
   box-shadow: inset 2px 5px 10px rgb(5, 5, 5);
   color: #ffffff;
 }
+::placeholder {
+  color: #ffffff;
+}
 .sel-day {
   background: #184e77;
   border: none;
@@ -252,6 +255,7 @@ main {
   color: #ffffff;
 }
 .chos {
+  gap: 6px;
   padding: 12px;
 }
 .login {
@@ -307,6 +311,12 @@ a {
     padding: 8px;
     font-size: 14px;
   }
+  .sel-arrival{
+    margin-top: 6px;
+  }
+  .sel-departure{
+    margin-top: 6px;
+  }
 }
 
 @media only screen and (min-width: 481px) and (max-width: 768px) {
@@ -343,6 +353,9 @@ a {
     margin:-180px 15px;
     padding: 10px;
     font-size: 15px;
+  }
+  .sel-arrival{
+    margin-top: 6px;
   }
 }
 
@@ -407,4 +420,12 @@ a {
   .asarch {
     height: 70px;
   }
+}
+
+
+
+
+@font-face {
+  font-family:qartuli ;
+  src: url('fonts/NotoSerifGeorgian-VariableFont_wdth\,wght.ttf');
 }
