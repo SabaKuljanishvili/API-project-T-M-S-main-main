@@ -90,7 +90,7 @@ document.addEventListener("DOMContentLoaded", () => {
     });
 });
 
-
+// login log out
 document.addEventListener("DOMContentLoaded", function() {
     let token = localStorage.getItem("token");
     const authLink = document.getElementById("authLink");
