@@ -24,7 +24,7 @@ document.addEventListener("DOMContentLoaded", () => {
         let slicedUsers = filteredUsers.slice(0, end);
 
         slicedUsers.forEach(item => {
-            cont.innerHTML += `<div class="mat">
+            cont.innerHTML += `<div class="mat">    
                 <h1 class="name">${item.name}</h1>
                 <p class="from">დან: ${item.from}</p>
                 <p class="to">მდე: ${item.to}</p>
