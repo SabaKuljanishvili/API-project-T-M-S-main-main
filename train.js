@@ -36,13 +36,14 @@ document.addEventListener("DOMContentLoaded", () => {
   function fillVagonOptions(vagons) {
       let select = document.getElementById("vagon-select");
       select.innerHTML = '<option value="">-- აირჩიეთ --</option>';
+      //vagonis sia
       vagons.forEach(vagon => {
           let option = document.createElement("option");
           option.value = vagon.id;
           option.textContent = vagon.name;
           select.appendChild(option);
       });
-
+//skamebis chveneba 
       select.addEventListener("change", (event) => {
           let selectedVagon = vagons.find(v => v.id == event.target.value);
           if (selectedVagon) {
@@ -54,7 +55,7 @@ document.addEventListener("DOMContentLoaded", () => {
           displaySeatInfo(vagons[0]); 
       }
   }
-
+//skamebis chveneba
   function displaySeatInfo(vagon) {
       let infoDiv = document.getElementById("vagon-info");
       infoDiv.innerHTML = `<h2>${vagon.name} </h2>`;
@@ -73,7 +74,7 @@ document.addEventListener("DOMContentLoaded", () => {
           if (selectedSeatsGlobal.some(item => item.vagonName === vagon.name && item.seatNumber == seat.number)) {
               seatButton.classList.add("selected");
           }
-
+//archeva // gauqmeba 
           seatButton.addEventListener("click", () => {
               const vagonName = vagon.name;
               const seatNumber = seat.number;
@@ -98,7 +99,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
       updateSelectedInfo();
   }
-
+// archeulebis chveneba
   function updateSelectedInfo() {
       let selectedInfo = document.getElementById("selected-seats-info");
       if (selectedSeatsGlobal.length === 0) {
@@ -113,7 +114,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
       html += `<button id="buy-btn">ყიდვა</button>`;
       selectedInfo.innerHTML = html;
-
+// sweet alert yidvis dadawtureba 
       document.getElementById("buy-btn").addEventListener("click", () => {
           Swal.fire({
               title: 'ყიდვის დადასტურება',
